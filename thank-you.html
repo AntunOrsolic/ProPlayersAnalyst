@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvala! | Pro Players Analyst</title>
+    
+    <!-- Fontovi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .thank-you-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--accent-lightest);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .thank-you-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .thank-you-content h1 {
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .thank-you-content p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .back-home {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .back-home:hover {
+            background-color: var(--gold-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Sakrivamo sadržaj dok se ne učita JavaScript */
+        .thank-you-content {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .thank-you-content.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <main class="thank-you-section">
+        <div class="thank-you-content">
+            <h1 id="thankYouTitle">Hvala!</h1>
+            <div id="thankYouMessage">
+                <!-- Sadržaj će biti dodan putem JavaScripta -->
+            </div>
+            <a href="/" class="back-home">Povratak na početnu</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const source = urlParams.get('source');
+            
+            const title = document.getElementById('thankYouTitle');
+            const messageContainer = document.getElementById('thankYouMessage');
+            const content = document.querySelector('.thank-you-content');
+            
+            if (source === 'contact') {
+                title.textContent = 'Hvala na poruci!';
+                messageContainer.innerHTML = `
+                    <p>Vaša poruka je uspješno poslana. Odgovorit ćemo vam u najkraćem mogućem roku.</p>
+                    <p>Cijenimo vaš interes i radujemo se našoj budućoj suradnji!</p>
+                `;
+            } else if (source === 'subscribe') {
+                title.textContent = 'Hvala na pretplati!';
+                messageContainer.innerHTML = `
+                    <p>Uspješno ste se pretplatili na naš newsletter. Uskoro ćete primiti potvrdni email.</p>
+                    <p>Radujemo se što ćemo s Vama dijeliti najnovije vijesti i analize iz svijeta nogometa!</p>
+                `;
+            } else {
+                title.textContent = 'Hvala!';
+                messageContainer.innerHTML = `
+                    <p>Vaš zahtjev je uspješno zaprimljen.</p>
+                    <p>Hvala vam na interesu za Pro Players Analyst!</p>
+                `;
+            }
+            
+            // Prikazujemo sadržaj s fade efektom
+            content.classList.add('loaded');
+        });
+    </script>
+</body>
+</html> 

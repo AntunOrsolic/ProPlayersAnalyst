@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta tagovi -->
+    <title>Pro Players Analyst | Profesionalna nogometna analiza i edukacija</title>
+    <meta name="description"
+        content="Vrhunska nogometna analiza, video analize utakmica i edukacija za nogometne analitičare. Specijalizirani tečajevi i profesionalna analitika nogometnih utakmica.">
+    <meta name="keywords"
+        content="nogometna analiza, video analiza, nogometni analitičar, nogometna analitika, analiza utakmica, edukacija nogometnih analitičara">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://proplayers-analyst.com/">
+    <meta property="og:title" content="Pro Players Analyst | Profesionalna Nogometna Analiza">
+    <meta property="og:description"
+        content="Vrhunska nogometna analiza, video analize utakmica i edukacija za nogometne analitičare.">
+    <meta property="og:image" content="https://proplayers-analyst.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://proplayers-analyst.com/">
+    <meta property="twitter:title" content="Pro Players Analyst | Profesionalna Nogometna Analiza">
+    <meta property="twitter:description"
+        content="Vrhunska nogometna analiza, video analize utakmica i edukacija za nogometne analitičare.">
+    <meta property="twitter:image" content="https://proplayers-analyst.com/images/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://proplayers-analyst.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Fontovi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Strukturirani podaci -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Pro Players Analyst",
+      "description": "Profesionalna nogometna analiza i edukacija nogometnih analitičara",
+      "image": "https://proplayers-analyst.com/images/logo.png",
+      "url": "https://proplayers-analyst.com",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "HR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "",
+        "longitude": ""
+      },
+      "sameAs": [
+        "https://www.instagram.com/proplayersanalyst/",
+        "https://www.linkedin.com/in/pro-players-analyst-74a9ab334/",
+        "https://www.youtube.com/@PPAnalyst"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "description": "Edukacija nogometnih analitičara"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Glavna navigacija">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="/" class="logo">
+                    <h1>Pro Players Analyst</h1>
+                </a>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/proplayersanalyst/" target="_blank" aria-label="Instagram"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/pro-players-analyst-74a9ab334/" target="_blank"
+                        aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@PPAnalyst" target="_blank" aria-label="YouTube"><i
+                            class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Otvori izbornik" aria-expanded="false"
+                type="button">
+                <span class="hamburger-icon">☰</span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#o-nama">Naša misija</a></li>
+                <li><a href="#usluge">Vještine</a></li>
+                <li><a href="#edukacija">Edukacija</a></li>
+                <li><a href="#reference">Reference</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#subscribe">Newsletter</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gumb za povratak na vrh -->
+    <button class="back-to-top" aria-label="Povratak na vrh stranice">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="hero-header">
+        <img id="header-image" src="images\header.jpg" alt="Nogometni teren s analitičkim oznakama" width="1920"
+            height="1080">
+    </header>
+
+    <!-- O nama -->
+    <section class="section" id="o-nama" itemscope itemtype="https://schema.org/AboutPage">
+        <div class="container">
+            <h2 class="text1" itemprop="name">Naša misija</h2>
+
+            <div class="about-content" itemprop="mainContentOfPage">
+                <p class="about-text">
+                    Naša misija je pružiti sve potrebne informacije vezane uz nogometnu video analizu, od osnovnih gdje
+                    pronaći utakmice do ključnih detalja koje Vašu analizu dižu na višu, profesionalnu razinu.
+                    <br>
+                    <br>
+                    Kroz originalan sustav izrade analiza nadograđivan kroz godine, Edukacija je potpuno prilagođena
+                    svima,
+                    naši polaznici su aktivni igrači, treneri, skauti i početnici kojima je ovo odlična prilika za
+                    ulazak u svijet nogometa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Naše usluge -->
+    <section class="section" id="usluge">
+        <div class="container">
+            <h2 class="text3">5 vještina koje ćete naučiti na našoj Edukaciji</h2>
+            <div class="usluge-container">
+                <div class="usluga-item">
+                    <i class="bi bi-play usluga-icon"></i>
+                    <h3 class="usluga-title">Osnove video analize</h3>
+                    <p class="usluga-desc">Kako početi, gdje pronaći utakmice i korisne podatke</p>
+                </div>
+
+                <div class="usluga-item">
+                    <i class="bi bi-laptop usluga-icon"></i>
+                    <h3 class="usluga-title">Obrada utakmice</h3>
+                    <p class="usluga-desc">Koristeći profesionalni program za obradu utakmica</p>
+                </div>
+
+                <div class="usluga-item">
+                    <i class="bi bi-book usluga-icon"></i>
+                    <h3 class="usluga-title">Taktička teorija</h3>
+                    <p class="usluga-desc">Kroz prezentacije i knjige</p>
+                </div>
+
+                <div class="usluga-item">
+                    <i class="bi bi-camera-video usluga-icon"></i>
+                    <h3 class="usluga-title">Video editing</h3>
+                    <p class="usluga-desc">Uređivanje video materijala</p>
+                </div>
+
+                <div class="usluga-item">
+                    <i class="bi bi-file-person usluga-icon"></i>
+                    <h3 class="usluga-title">Video animacije i grafike</h3>
+                    <p class="usluga-desc">Podižu analizu na višu razinu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edukacija -->
+    <section class="section" id="edukacija">
+        <div class="container">
+            <h2 class="text1">Upis na Edukaciju</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="text-group">
+                        <span class="title">Gold Edukacija</span>
+                        <span class="subtitle">Ekskluzivna razina</span>
+                    </div>
+                    <div class="text-group">
+                        <span class="price">849,00 €</span>
+                        <span class="subtitle">po edukaciji</span>
+                    </div>
+                    <a href="https://form.jotform.com/250116105864046" class="btn-primary">Prijavi se</a>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-square-fill"></i>Predavanja 1 na 1</li>
+                        <li><i class="bi bi-check-square-fill"></i>Osigurana praksa u klubu</li>
+                        <li><i class="bi bi-check-square-fill"></i>Zajednička izrada analize</li>
+                        <li><i class="bi bi-check-square-fill"></i>ONCE licenca + certifikat</li>
+                        <li><i class="bi bi-check-square-fill"></i>Teorijski dio</li>
+                        <li><i class="bi bi-check-square-fill"></i>20 profesionalnih primjera</li>
+                        <li><i class="bi bi-check-square-fill"></i>Izrada CV-a</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="text-group">
+                        <span class="title">Premium Edukacija</span>
+                        <span class="subtitle">Profesionalna razina</span>
+                    </div>
+                    <div class="text-group">
+                        <span class="price">289,00 €</span>
+                        <span class="subtitle">po edukaciji</span>
+                    </div>
+                    <a href="https://form.jotform.com/250116105864046" class="btn-primary">Prijavi se</a>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-square-fill"></i>Posao nogometnog analitičara</li>
+                        <li><i class="bi bi-check-square-fill"></i>+20 profesionalnih primjera analiza</li>
+                        <li><i class="bi bi-check-square-fill"></i>Obrada video u programu za analizu</li>
+                        <li><i class="bi bi-check-square-fill"></i>Olakšan tehnički dio posla (montaža)</li>
+                        <li><i class="bi bi-check-square-fill"></i>Video animacije i grafike</li>
+                        <li><i class="bi bi-check-square-fill"></i>Zadatci za provjeru</li>
+                        <li><i class="bi bi-check-square-fill"></i>Materijali Vam ostaju nakon Edukacije</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="text-group">
+                        <span class="title">Skauting Edukacija</span>
+                        <span class="subtitle">Postani PRO skaut</span>
+                    </div>
+                    <div class="text-group">
+                        <span class="price">249,00 €</span>
+                        <span class="subtitle">cijena edukacije</span>
+                    </div>
+                    <a href="https://form.jotform.com/250116105864046" class="btn-primary">Prijavi se</a>
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-square-fill"></i>Uvod u skauting</li>
+                        <li><i class="bi bi-check-square-fill"></i>Opis posla nogometnog skauta</li>
+                        <li><i class="bi bi-check-square-fill"></i>Proces kako prepoznati Talent</li>
+                        <li><i class="bi bi-check-square-fill"></i>Izrada Skauting Reporta</li>
+                        <li><i class="bi bi-check-square-fill"></i>Iskustvo i primjeri iz prakse</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partneri -->
+    <section id="partneri">
+        <div class="container">
+            <h2 class="text1">Partneri</h2>
+            <div class="partneri-container">
+                <img src="images\nkistra1961.png" alt="NK Istra 1961" class="partner-logo">
+                <img src="images\once_logo.jpeg" alt="ONCE Sport" class="partner-logo">
+                <img src="images\uhnt_logo.jpg" alt="Udruga Hrvatskih Nogometnih Trenera" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference -->
+    <section class="section" id="reference">
+        <div class="container">
+            <h2 class="text1">Što drugi kažu o nama</h2>
+            <div class="reference-carousel">
+                <div class="reference-container">
+
+                    <article class="reference">
+                        <div class="reference-image">
+                            <img src="images/milicevic.jpg" alt="Hrvoje Milićević" loading="lazy">
+                        </div>
+                        <div class="reference-content">
+                            <blockquote>"Preporuka svima koji žele da uđu u svijet i jednog dana da uživaju u svom
+                                poslu. Kroz ovu edukaciju vidio sam dosta detalja koje kao igrač na terenu ne možes da
+                                vidiš. Programi su jako jednostavni za koristiti i lako možete napraviti ono što
+                                želite. Pohvalio bih mentora Dinu Grgića koji je bio uvijek dostupan za bilo kakvo
+                                objašnjenje. Sretno svima budućim analitičarima."</blockquote>
+                            <div class="reference-author">
+                                <p class="author-name">Hrvoje Milićević</p>
+                                <p class="author-title">Profesionalni igrač AEK Larnace</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="reference">
+                        <div class="reference-image">
+                            <img src="images/stiglec.jpg" alt="Dino Štiglec" loading="lazy">
+                        </div>
+                        <div class="reference-content">
+                            <blockquote>"Preporučio bih svakom tko želi vidjeti nogomet malo detaljnije. Naučio sam puno
+                                novih stvari za posao kojim se želim baviti. Edukacija je jako jednostavno napravljena i
+                                prilagođena je za svakoga. Jako mi se sviđa komunikacija s mentorom koji je jako stručan
+                                i daje jasne upute. U svakom slučaju odlična platforma za početak."</blockquote>
+                            <div class="reference-author">
+                                <p class="author-name">Dino Štiglec</p>
+                                <p class="author-title">HNK Gorica - preko 200 HNL nastupa</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="reference">
+                        <div class="reference-image">
+                            <img src="images/paskvan.png" alt="Trener Vanja Paškvan" loading="lazy">
+                        </div>
+                        <div class="reference-content">
+                            <blockquote>"Bez obzira jeste li početnik ili iskusni trener - analitičar, kontinuirana
+                                edukacija ključna je za stjecanje novih vještina i proširenje postojećeg znanja. Pro
+                                Players Analyst edukacija posebno se ističe kao prilika za sve one koji žele
+                                unaprijediti svoje kompetencije, bilo da ste profesionalac ili amater. Ova edukacija
+                                nudi konkretne alate i pristupe koji će vam pomoći da postanete još uspješniji u svom
+                                poslu."</blockquote>
+                            <div class="reference-author">
+                                <p class="author-name">Vanja Paškvan</p>
+                                <p class="author-title">Ajaxov Talent Scout, NK Pomorac, UEFA A licenca</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="reference">
+                        <div class="reference-image">
+                            <img src="images/seperac.png" alt="Trener Tihomir Šeperac" loading="lazy">
+                        </div>
+                        <div class="reference-content">
+                            <blockquote>"Ako želiš napredovati kao trener moja preporuka za edukaciju. Svi materijali
+                                odlično pripremljeni i napravljeni iz kojih se lako snalaziti i učiti. Mentor uvijek
+                                dostupan i spreman pomoći ako bilo šta treba. Program once odličan ,jednostavan i
+                                kvalitetan za izrade analiza."</blockquote>
+                            <div class="reference-author">
+                                <p class="author-name">Tihomir Šeperac</p>
+                                <p class="author-title">NK Zagorac Krapina, UEFA A licenca</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="reference">
+                        <div class="reference-image">
+                            <img src="images/skof.png" alt="Trener Ivan Škof" loading="lazy">
+                        </div>
+                        <div class="reference-content">
+                            <blockquote>"Uzeo sam premium edukaciju. Za nekoga tko je radio analize putem videa, ova
+                                edukacija mi je pomogla da sve to podignem na jedan ozbiljniji level. Edukacija od
+                                početka do kraja ima glavu i rep. Sve je jednostavno pojašnjeno te nisam imao
+                                nepoznanice u vokabularu predavača. Jedva čekam početak prvenstva kako bi ovo radio
+                                svakodnevno i usavršavao se u nogometnoj analitici. Od mene svaka preporuka."
+                            </blockquote>
+                            <div class="reference-author">
+                                <p class="author-name">Ivan Škof</p>
+                                <p class="author-title">Trener NK Funtana, UEFA B licenca</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="text1">Blog</h2>
+            <div class="blog-container">
+                <!-- Prvi red (najnoviji članci) -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 1" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 1</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 2" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 2</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 3" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 3</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Drugi red -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 4" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 4</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 5" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 5</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 6" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 6</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Treći red -->
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 7" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 7</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 8" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 8</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/placeholder.jpg" alt="Blog post 9" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Naslov članka 9</h3>
+                        <div class="post-meta">
+                            <span class="date">Datum</span>
+                        </div>
+                        <div class="post-excerpt">
+                            <p>Kratki opis članka...</p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Pročitaj više</a>
+                            <button onclick="shareBlog('Naslov članka', window.location.href)" class="share-btn"
+                                aria-label="Podijeli članak">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="text1 fade-in">Često Postavljana Pitanja</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Koliko dugo postoji te na kojem se jeziku odvija Edukacija Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Edukacija se odvija na hrvatskom jeziku, postoji od početka devetog mjeseca 2024. te ukupno je
+                        do sada upisano gotovo 50 polaznika iz 10 različitih država.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Gdje se odvija Edukacija Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Edukacija je potpuno online. Svi materijali su pripremljeni i odmah po upisu dobijete ih na
+                        mail.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Postoje li određeni uvjeti za upis na Edukaciju Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Ne, Edukaciju mogu upisati svi, nema nikakvih uvjeta. To je upravo cilj. Edukacija prilagođena
+                        svima i do sada su je završavali profesionalni igrači, licencirani treneri ali i početnici
+                        kojima je ovo prvi susret s nogometom.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Koje je trajanje Edukacije Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Po dosadašnjim iskustvima polaznika trajanje Edukacije je 6-8 tjedana, što uključuje završene
+                        tri razine zadataka. Trajanje se može produžiti na zahtjev polaznika. Meni kao voditelju
+                        Edukacije je cilj da svi upisani uspješno završe i nauče raditi analize.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Kako izgleda sadržaj Edukacije Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Sadržaj Edukacije je podijeljen na 4 cjeline, sadrži sve što je potrebno za naučiti raditi
+                        kvalitetne video analize.
+                        <br>
+                        <br>
+                        <ol>
+                            <li>prezentacije kao uvid i prolazak teoretskog dijela, prezentacije su jednostavne i sadrže
+                                bitne informacije uz detaljan opis kako koristiti određene programe</li>
+                            <li>primjeri profesionalnih video analiza (timske, individualne i analize protivnika, ukupno
+                                preko 20 primjera, uključujući HNL analize Dinama i Hajduka)</li>
+                            <li>video tutorijali koji objašnjavaju cijeli proces izrade analize</li>
+                            <li>zadatci</li>
+                        </ol>
+                        <br>
+                        Program sadržava popratni sadržaj kao što su reporti, grafike, Tactical Cam utakmice i dr.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Kako funkcionira sistem zadataka na Edukaciji Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Po dogovoru kad prođete cijeli sadržaj možete krenuti s obradom zadataka. Zadatci su podijeljeni
+                        na tri razine, njihov cilj je testiranje tehničko-taktičkog sadržaja koji ste ranije prošli.
+                        <br>
+                        Krećemo od najjedostavnijih pa sve do izrade cijele analize.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Kako izgleda mentorski program na Edukaciji Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Kad dogovorimo kanal komunikacije (Whatsapp, mail, Instagram, LinkedIn..) možete se javiti za
+                        sve što Vam nije jasno ili trebate pomoć. Stojim Vam na raspolaganju svaki dan za sve vrste
+                        pomoći.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Dobije li se određeni certifikat nakon uspješno završene Edukacije Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Da, dobije se. Na Premium razini dobije se potvrda završene Edukacije. Na Gold razini dobije se
+                        potvrda te ONCE Sport cerfifikat za videoanalitičara.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Koja je cijena Edukacije Pro Players Analyst i postoji li opcija plaćanja u ratama?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Cijena Premium razine je 289 eura. Cijena Gold razine je 849 eura. Da, moguće je platiti u
+                        nekoliko rata, vrijedi za obje razine.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Gubimo li pravo na korištenje materijala nakon završene Edukacije Pro Players Analyst?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Ne, nakon završene Edukacije svi materijali Vam ostaju za korištenje na mailu i možete ih
+                        koristiti kada god želite. Na Gold razini uz to - uključeno je individualno savjetovanje oko
+                        analiza do kraja 2025. godine.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="section" id="subscribe">
+        <div class="container">
+            <h2 class="text1 fade-in">Pretplatite se na naš newsletter</h2>
+            <form action="https://formsubmit.co/proplayersanalyst@gmail.com" method="POST" class="subscribe-form">
+                <!-- Anti-spam zaštita -->
+                <input type="hidden" name="_captcha" value="true">
+                <input type="text" name="_honey" style="display: none">
+
+                <!-- Konfiguracija forme -->
+                <input type="hidden" name="_subject" value="Nova pretplata na newsletter!">
+                <input type="hidden" name="_template" value="table">
+
+                <!-- Automatski odgovor pretplatniku -->
+                <input type="hidden" name="_autoresponse" value="Hvala Vam što ste se pretplatili na naš Newsletter!">
+
+                <!-- Preusmjeravanje nakon uspješne pretplate -->
+                <input type="hidden" name="_next"
+                    value="https://proplayers-analyst.com/thank-you.html?source=subscribe">
+
+                <div class="form-group">
+                    <label for="subscribe-ime">Ime</label>
+                    <input type="text" id="subscribe-ime" name="ime" placeholder="Unesite vaše ime" required
+                        aria-required="true" autocomplete="given-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="subscribe-prezime">Prezime</label>
+                    <input type="text" id="subscribe-prezime" name="prezime" placeholder="Unesite vaše prezime" required
+                        aria-required="true" autocomplete="family-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="subscribe-email">Email adresa</label>
+                    <input type="email" id="subscribe-email" name="email" placeholder="Unesite vaš email" required
+                        aria-required="true" autocomplete="email">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Pretplati se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="text1">Kontaktirajte nas</h2>
+            <form class="contact-form" action="https://formsubmit.co/proplayersanalyst@gmail.com" method="POST">
+                <!-- Anti-spam zaštita -->
+                <input type="hidden" name="_captcha" value="true">
+                <input type="text" name="_honey" style="display: none">
+
+                <!-- Konfiguracija forme -->
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Nova poruka s kontakt forme!">
+
+                <!-- Preusmjeravanje nakon uspješnog slanja -->
+                <input type="hidden" name="_next" value="https://proplayers-analyst.com/thank-you.html?source=contact">
+
+                <div class="form-group">
+                    <label for="ime">Ime *</label>
+                    <input type="text" id="ime" name="ime" required autocomplete="given-name"
+                        placeholder="Unesite vaše ime">
+                </div>
+
+                <div class="form-group">
+                    <label for="prezime">Prezime *</label>
+                    <input type="text" id="prezime" name="prezime" required autocomplete="family-name"
+                        placeholder="Unesite vaše prezime">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required autocomplete="email"
+                        placeholder="Unesite vašu email adresu">
+                </div>
+
+                <div class="form-group">
+                    <label for="poruka">Poruka *</label>
+                    <textarea id="poruka" name="poruka" required rows="5" placeholder="Unesite vašu poruku"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Pošalji poruku</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Pro Players Analyst. Sva prava pridržana.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/proplayersanalyst/" target="_blank" aria-label="Instagram"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/pro-players-analyst-74a9ab334/" target="_blank"
+                        aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@PPAnalyst" target="_blank" aria-label="YouTube"><i
+                            class="bi bi-youtube"></i></a>
+                </div>
+                <nav aria-label="Footer navigacija">
+                    <ul>
+                        <li><a href="/privatnost.html" style="text-decoration: none;">Politika privatnosti</a></li>
+                        <li><a href="/uvjeti">Uvjeti korištenja</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript s apsolutnom putanjom -->
+    <script src="https://proplayers-analyst.com/script.js"></script>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                Ova web stranica koristi kolačiće kako bi vam pružila najbolje korisničko iskustvo. Kolačići nam pomažu
+                analizirati promet i poboljšati našu web stranicu. Za više informacija pogledajte našu <a
+                    href="/privatnost.html">Politiku privatnosti</a>.
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept-cookies">Prihvati sve</button>
+                <button class="cookie-btn reject-cookies">Odbij neobavezne</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# Enable rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# Handle static HTML files first
+RewriteCond %{REQUEST_URI} !^/cms/
+RewriteCond %{REQUEST_URI} \.html$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ $1 [L]
+
+# Handle WordPress only in /cms/ directory
+RewriteCond %{REQUEST_URI} ^/cms/
+RewriteRule ^cms/(.*)$ cms/$1 [L]
+
+# WordPress rules only for /cms/ directory
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} ^/cms/
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    RewriteCond %{REQUEST_URI} ^/cms/
+    RewriteRule ^cms/index\.php$ - [L]
+    RewriteCond %{REQUEST_URI} ^/cms/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /cms/index.php [L]
+</IfModule>
+
+# Handle CORS
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
+</IfModule>
+
+# Handle main site routes
+RewriteCond %{REQUEST_URI} !^/cms/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

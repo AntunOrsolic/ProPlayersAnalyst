@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_posts",
+  "info": {
+    "singularName": "blog-post",
+    "pluralName": "blog-posts",
+    "displayName": "Blog Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150,
+      "minLength": 3
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "content": {
+      "type": "blocks",
+      "required": true
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "maxLength": 600
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Taktička analiza",
+        "Treneri",
+        "Transferi",
+        "Utakmice",
+        "Igrači"
+      ],
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "datePublished": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
