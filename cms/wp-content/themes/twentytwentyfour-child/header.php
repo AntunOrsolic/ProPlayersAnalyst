@@ -3,6 +3,10 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <!-- Fontovi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,12 +34,13 @@
                 <span class="hamburger-icon">☰</span>
             </button>
             <ul class="nav-links" role="menubar">
-                <li role="none"><a href="/#o-nama" role="menuitem">O nama</a></li>
-                <li role="none"><a href="/#nogometna-analiza" role="menuitem">Nogometna analiza</a></li>
+                <li role="none"><a href="/#o-nama" role="menuitem">Naša misija</a></li>
+                <li role="none"><a href="/#usluge" role="menuitem">Vještine</a></li>
                 <li role="none"><a href="/#edukacija" role="menuitem">Edukacija</a></li>
                 <li role="none"><a href="/#reference" role="menuitem">Reference</a></li>
-                <li role="none"><a href="/cms/blog" role="menuitem">Blog</a></li>
-                <li role="none"><a href="/#subscribe" role="menuitem">Subscribe</a></li>
+                <li role="none"><a href="/#blog" role="menuitem">Blog</a></li>
+                <li role="none"><a href="/#faq" role="menuitem">FAQ</a></li>
+                <li role="none"><a href="/#subscribe" role="menuitem">Newsletter</a></li>
                 <li role="none"><a href="/#contact" role="menuitem">Kontakt</a></li>
             </ul>
         </div>

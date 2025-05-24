@@ -452,20 +452,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('popup-modal');
     const closeBtn = document.querySelector('.popup-close');
     
-    // Show modal after 5 seconds
-    setTimeout(function() {
-        modal.style.display = 'block';
-    }, 5000);
+    // Provjeri je li korisnik već zatvorio pop-up ili preuzeo brošuru
+    const hasInteractedWithPopup = localStorage.getItem('popupInteracted');
+    
+    if (!hasInteractedWithPopup) {
+        // Show modal after 5 seconds
+        setTimeout(function() {
+            modal.style.display = 'block';
+        }, 5000);
+    }
     
     // Close modal when X is clicked
     closeBtn.addEventListener('click', function() {
         modal.style.display = 'none';
+        localStorage.setItem('popupInteracted', 'true');
     });
     
     // Close modal when clicking outside of it
     window.addEventListener('click', function(event) {
         if (event.target === modal) {
             modal.style.display = 'none';
+            localStorage.setItem('popupInteracted', 'true');
         }
     });
 });
@@ -483,6 +490,7 @@ function downloadBrochure() {
     link.click();
     document.body.removeChild(link);
     
-    // Close the modal after download starts
+    // Close the modal and save interaction
     document.getElementById('popup-modal').style.display = 'none';
+    localStorage.setItem('popupInteracted', 'true');
 }
